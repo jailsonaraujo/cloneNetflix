@@ -1,201 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     padding: 0;
     margin: 0;
 }
-#container-inicial{
+
+#main-principal{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(#000 80%,#252525 );
+    background: linear-gradient(#000, #424242);
     position: relative;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#container-inicial #banner-img{
+#img-bacground{
     width: 100%;
     height: 100%;
-    opacity: .4;
+    opacity: .5;
     object-fit: cover;
 }
-#nav-menu-topo{
+
+/* formatação menu top */
+#nav-menu-container{
+    height: 4rem;
     width: 100%;
-    height: auto;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2%;
+    left: -.1%;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 0 1.5rem 0;
 }
-#nav-menu-topo #container{
-    width: 93%;
+#menu{
+    width: 91%;
     height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 #logo{
-    width: 8.375rem;
+    width: 8.3rem;
     height: 2.25rem;
 }
-#select-option{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-select{
-    width: 8.375rem;
-    height: 2.25rem;
+#opcoes{
+    padding: .5rem 1.375rem;
+    float: right;
+    border: solid 1px #aaa;
+    border-radius: 2px;
     background-color: transparent;
-    border: 1px solid #aaa;
     color: #fff;
     font-size: 1rem;
-    border-radius: 2px;
-    
+    margin-right: 1.5rem;
 }
-#btn-entrar{
-    padding: 7px 17px 7px 17px;
+#entrar-login{
     background-color: #e50914;
-    font-size: 1rem;
-    margin-left: 2rem;
-    border-radius: 2px;
     color: #fff;
+    padding: 7px 17px;
+    font-size: 1rem;
+    float: right;
+    border-radius: 3px;
     text-decoration: none;
 }
 
-/* formatação do card de titulos e subtitulos */
-#card-titulos{
-    color: #FFF;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    text-align: center;
-}
-#titulo1{
-    font-size: 3rem;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 900;
-    font-family: Roboto, sans-serif;
-}
-#titulo2{
-    font-size: 1.5rem;
-    width: 70%;
-    margin: 1rem auto;
-    text-align: center;
-    font-family: Roboto, sans-serif;
-}
-#card-titulos{
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: .85rem;
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto, sans-serif;
-}
-#titulo3{
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-}
-form{
-    width: 100%;
-    margin: 1rem auto;
-}
-#input-email{
-    margin: 1rem auto;
-    width: 50%;
-    height: 60px;
-}
-#btn-form{
-    width: 20%;
-    height: 60px;
-    background-color: #e50914;
-    border: none;
-    text-align: center;
-}
-#btn-form > span{
-    color: #FFF;
-    font-size: 1.5rem;
-    text-align: center;
-}
-#btn-form > span::after{
-    content: ">";
-    height: 6rem;
-    color: #FFF;
-    margin-left: 5%;
-}
+@media all and (max-width: 760px){
+    #main-principal{
+        width: 100%;
+        height: 100vh;
+    }
+    #img-bacground{
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        transform: none;
+        max-width: 100%;
+    }
 
-@media screen and (max-width: 700px){
+    /* formatação menu top */
+    #nav-menu-container{
+        height: 4rem;
+        width: 100%;
+        position: absolute;
+        top: 1%;
+    }
     #logo{
-        width: 6rem;
+        width: auto;
         height: 1.5rem;
-        line-height: normal;
     }
-    select{
-        width: 6rem;
-        height: 1.5rem;       
+    #opcoes{
+        padding: .25rem 1.375rem;
+        float: right;
+        border: solid 1px #aaa;
+        border-radius: 2px;
+        background-color: transparent;
+        color: #fff;
+        font-size: .875rem;
+        margin-right: .8rem;
     }
-    #btn-entrar{
-        padding: .25rem .5rem;
-    }
-
-
-    #card-titulos{
-        width: 100%;
-        text-align: center;
-    }
-    #titulo1{
-        font-size: 1.5rem;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-        font-weight: 400;
-        font-family: Roboto, sans-serif;
-    }
-    #titulo2{
-        font-size: .85rem;
-        width: 100%;
-        margin: 1rem auto;
-        text-align: center;
-        font-family: Roboto, sans-serif;
-    }
-    #card-titulos{
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: .85rem;
-        display: flex;
-        flex-direction: column;
-        font-family: Roboto, sans-serif;
-        font-weight: 200;
-    }
-    #titulo3{
-        width: 85%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    form{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #input-email{
-        margin: 1rem auto;
-        width: 100%;
-        height: 45px;
-    }
-    #btn-form{
-        width: 30%;
-        height: 45px;
+    #entrar-login{
         background-color: #e50914;
-        border: none;
-        text-align: center;
+        color: #fff;
+        padding: .25rem .5rem;
+        font-size: .9rem;
+        float: right;
+        border-radius: 3px;
+        text-decoration: none;
     }
 }
