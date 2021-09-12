@@ -9,6 +9,7 @@
     background: linear-gradient(#000, #424242);
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 8px solid #222;
 }
 #img-bacground{
     width: 100%;
@@ -55,6 +56,179 @@
     float: right;
     border-radius: 3px;
     text-decoration: none;
+}
+
+/* formatação section 1 */
+#section1{
+    border-bottom: 8px solid #222;
+    padding: 40px 0;
+    background-color: #000;
+}
+#card1{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#card-titulos{
+    width: 52%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+#titulo1{
+    font-size: 3rem;
+}
+#subTitulo2{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+#card-imagem{
+    position: relative;
+    width: 48%;
+    height: auto;
+}
+#img-tv{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#video{
+    position: absolute;
+    top: 20.5%;
+    left: 13%;
+    width: 73%;
+    height: 13.5rem;
+}
+#video video{
+    width: 100%;
+}
+
+/* formatação section 2 */
+#section2{
+    border-bottom: 8px solid #222;
+    padding: 40px 0;
+    background-color: #000;
+}
+#card-section2{
+    max-width: 1100px;
+    height: 25rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#card-section2-imagem{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+#img-mobile{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#card-section2-download{
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #222;
+    border-radius: 10px;
+    padding: .5rem .5rem;
+    position: absolute;
+    bottom: 7%;
+    left: 12%;
+    background-color: #000;
+}
+#card-section2-download img{
+    width: 15%;
+    height: 100%;
+}
+#textos{
+    color: #fff;
+    font-size: .9rem;
+    width: 60%;
+    height: auto;
+}
+#gif{
+    width: 15%;
+    height: 70%;
+}
+#gif img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#card-section2-titulos{
+    width: 52%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+#card-section2-titulo1{
+    font-size: 3rem;
+}
+#card-section2-subTitulo2{
+    margin-top: 1.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* formatação section 3 */
+#section3{
+    background-color: #000;
+    color: #fff;
+    border-bottom: 8px solid #222;
+    padding: 40px 0;
+}
+#card-section3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#card-section3-titulos{
+    width: 52%;
+}
+#titulo1-card{
+    font-size: 3rem;
+}
+#subTitulo2-card{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+#card-section3-imagem{
+    position: relative;
+    width: 48%;
+}
+#section3-img-tv{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+#section3-video{
+    position: absolute;
+    bottom: 35%;
+    left: 19%;
+    width: 61%;
+    height: 13.5rem;
+}
+#section3-video video{
+    width: 100%;
 }
 
 @media all and (max-width: 760px){
