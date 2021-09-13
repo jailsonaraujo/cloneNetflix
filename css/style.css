@@ -231,6 +231,57 @@
     width: 100%;
 }
 
+/* formatação section 4 */
+#section4{
+    padding: 70px 0;
+    background-color: #000;
+    border-bottom: 8px solid #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#card-section4{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#card-section4-imagem{
+    width: 45%;
+}
+#img-infantil{
+    width: 100%;
+    height: 100%;
+}
+#card-section4-titulos{
+    width: 52%;
+}
+#card-section4-titulo1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+#card-section4-subTitulo1{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 1rem ;
+}
+
+/* formatação section 4 */
+#section5{
+    padding: 70px 45px;
+    background-color: #000;
+    border-bottom: 8px solid #222;
+}
+#card-section5{
+    color: #fff;
+}
+#card-section5 ul{
+    width: 75%;
+    border: solid 1px #fff;
+    margin: 2rem auto;
+}
+
 @media all and (max-width: 760px){
     #main-principal{
         width: 100%;
