@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Netflix</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
     <nav id="nav-menu-container">
       <div id="menu">
         <img id="logo" src="img/logo.png" alt="logo">
-        <a id="entrar-login" href="">Entrar</a>
+        <a id="entrarLogin" href="login.html">Entrar</a>
         <select id="opcoes">
           <option id="pt" value="Português">Português</option>
           <option id="ig" value="Inglês">Inglês</option>
@@ -95,18 +96,39 @@
     <div id="card-section5">
       <h1>Perguntas frequentes</h1>
       <ul>
-        <li><button>O que e a netflix?<i class="fa fa-plus"></i></button></li>
-        <div>
-          <span>
-            A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, 
-            filmes e documentários premiados em milhares de aparelhos conectados à internet.
-            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo
-            por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos 
-            novas séries e filmes.
-          </span>
-        </div>
+        <li>
+          <button onclick="mostrar(1)" class="btn">O que e a Netflix?<i class="fas fa-plus"></i></button>
+          <div id="mostrarTexto1" class="section5-texto">
+            <span>
+              A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, 
+              filmes e documentários premiados em milhares de aparelhos conectados à internet.
+              <br><br>
+              Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo
+              por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos 
+              novas séries e filmes.
+            </span>
+          </div>
+        </li>
+
+        <li>
+          <button onclick="mostrar(2)" class="btn">Quanto custa a Netflix?<i class="fas fa-plus"></i></button>
+          <div id="mostrarTexto2" class="section5-texto">
+            <span>
+              A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, 
+              filmes e documentários premiados em milhares de aparelhos conectados à internet.
+              <br><br>
+              Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo
+              por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos 
+              novas séries e filmes.
+            </span>
+          </div>
+        </li>
+        
       </ul>
     </div>
   </section>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
