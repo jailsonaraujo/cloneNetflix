@@ -29,6 +29,8 @@
     height: auto;
     opacity: 1;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
 .main-titulos h1{
     font-family: Arial, Helvetica, sans-serif;
