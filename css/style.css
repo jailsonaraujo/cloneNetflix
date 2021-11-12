@@ -11,12 +11,82 @@
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     border-bottom: 8px solid #222;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 #img-bacground{
     width: 100%;
     height: 100%;
     opacity: .5;
     object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+.main-titulos{
+    width: 80%;
+    height: auto;
+    opacity: 1;
+    color: #fff;
+}
+.main-titulos h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    width: 67%;
+    text-align: center;
+    margin: 0 auto;
+}
+.main-titulos h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+    width: 67%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.div-form{
+    text-align: center;
+    opacity: 1;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.div-form h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+}
+.div-form form{
+    text-align: center;
+    opacity: 1;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem ;
+}
+.div-form input{
+    opacity: 1;
+    width: 66%;
+    padding: .9rem 0;
+    font-size:1.2rem;
+    outline: none;
+}
+.div-form button{
+    opacity: 1;
+    width: 33%;
+    padding: .8rem 0;
+    font-size:1.7rem;
+    background-color: #de0611;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 /* formatação menu top */
@@ -34,6 +104,9 @@
 #menu{
     width: 91%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 #logo{
     width: 8.3rem;
