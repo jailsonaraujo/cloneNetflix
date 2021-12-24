@@ -3,5 +3,5 @@ Clone da plataforma netFlix para praticar o que foi aprendido nos estudos de des
 
 <img src="img/logo.png">
 
-Link de acesso (Visualização)
+<h2>Link de acesso (Visualização)</h2>
 <a href="https://jailsonaraujo.github.io/cloneNetflix/">Visualizar Página</a>
